@@ -1,0 +1,112 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.2.543
+MinVersion = 2.5
+OS = Windows NT 6.2 
+
+[Axes]
+xMin = -4.93367088405988
+xMax = 9.64632911594014
+xTickUnit = 0.5
+xGridUnit = 0.5
+yMin = -3.72502644256844
+yMax = 4.32331068727211
+yTickUnit = 0.5
+yGridUnit = 0.5
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+
+[Func1]
+FuncType = 2
+r = tr(t)
+From = 0
+To = 2pi
+Steps = 1000
+Color = clLime
+
+[Func2]
+FuncType = 2
+r = c(t)
+From = 0
+To = 2pi
+Steps = 1000
+Color = clBlue
+
+[Func3]
+FuncType = 2
+r = c2(t)
+From = 0
+To = 2pi
+Steps = 1000
+Color = clRed
+
+[Func4]
+FuncType = 2
+r = tr2(t)
+From = 0
+To = 2pi
+Steps = 1000
+Color = clAqua
+
+[Func5]
+FuncType = 2
+r = tr3(t)
+From = 0
+To = 2pi
+Steps = 1000
+Color = clFuchsia
+
+[Func6]
+FuncType = 2
+r = p2(t)
+From = 0
+To = 2pi
+Steps = 1000
+Color = clMaroon
+
+[Func7]
+FuncType = 2
+r = t4(t)
+Visible = 0
+From = 0
+To = 2pi
+Steps = 1000
+Color = clGreen
+
+[Func8]
+FuncType = 2
+r = t5(t)
+From = 0
+To = 2pi
+Steps = 1000
+Color = clMedGray
+
+[Data]
+TextLabelCount = 0
+FuncCount = 8
+PointSeriesCount = 0
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+
+[CustomFunctions]
+tr(t) = 1 /2 ( sin ( 5pi/6-mod( t+pi/6, 2pi/3 ) ) )
+a = 0
+tr2(t) = 1/sin(5pi/6-mod(t+pi/6,2pi/3))
+c(t) = tr(2a)*cos(2a-t)+sqrt(.25 - (tr(2a))^2*sin(2a - t)^2)
+c2(t) = 2tr(2a)*cos(2a-t)+sqrt(.25 - (2 tr(2a))^2*sin(2a - t)^2)
+d(t) = tr(a)*cos(a-t)+sqrt(.25 - tr(a)^2*sin(a - t)^2)
+p(t) = 2tr(-2a)*cos(-2a-t)+sqrt(.25 - (2 tr(-2a))^2*sin(-2a - t)^2)
+tr3(t) = 4/2 (sin( 5pi/6-mod(  t+pi/6, 2pi/3) ) )
+p2(t) = tr(-2a)*cos(-100a+t)+sqrt(.25 - (tr(-2a))^2*sin(-100a + t)^2)
+t4(t) = tr(a)*cos(a+t)+sqrt(.25 - tr(a)^2*sin(a + t)^2)
+t5(t) = 2tr(-2a)*cos(2a+t)+sqrt(.25 - (2 tr(-2a))^2*sin(2a + t)^2)
+
+[Animate]
+Constant = a
+FramesPerSecond = 7
+%a = 0;2pi;0.05
+

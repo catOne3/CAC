@@ -1,0 +1,73 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.2.543
+MinVersion = 2.5
+OS = Windows NT 6.2 
+
+[Axes]
+xMin = -10
+xMax = 10
+xTickUnit = 1
+xGridUnit = 1
+yMin = -5.52012148823083
+yMax = 5.52012148823083
+yTickUnit = 1
+yGridUnit = 1
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+
+[Func1]
+FuncType = 2
+r = tr(t)
+From = 0
+To = 2pi
+Steps = 1000
+Color = clLime
+
+[Func2]
+FuncType = 2
+r = tr2(t)
+From = 0
+To = 2pi
+Steps = 1000
+Color = clAqua
+
+[Func3]
+FuncType = 2
+r = c(t)
+From = 0
+To = 2pi
+Steps = 1000
+Color = clBlue
+
+[Func4]
+FuncType = 2
+r = c2(t)
+From = 0
+To = 2pi
+Steps = 1000
+Color = clRed
+
+[Data]
+TextLabelCount = 0
+FuncCount = 4
+PointSeriesCount = 0
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+
+[CustomFunctions]
+tr(t) = 1 / 2( sin ( 5pi/6-mod( t+a+pi/6, 2pi/3 ) ) )
+a = 0
+tr2(t) = 1 / sin ( 5pi/6-mod( t-a/3+pi/6, 2pi/3 ) )
+c(t) = tr(a)*cos(a-t)+sqrt(.25 - tr(a)^2*sin(a - t)^2)
+c2(t) = 2tr(-a/3)*cos(-a/3-t)+sqrt(.25 - (2 tr(-a/3))^2*sin(-a / 3- t)^2)
+
+[Animate]
+Constant = a
+FramesPerSecond = 7
+%a = 0;2pi;0.03
+

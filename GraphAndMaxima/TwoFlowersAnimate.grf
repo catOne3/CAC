@@ -1,0 +1,53 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.2.543
+MinVersion = 2.5
+OS = Windows NT 6.2 
+
+[Axes]
+xMin = -13.0019614997945
+xMax = 17.48119655538
+xTickUnit = 1
+xGridUnit = 1
+yMin = -7.40965834675507
+yMax = 9.41741523419548
+yTickUnit = 1
+yGridUnit = 1
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+
+[Func1]
+FuncType = 2
+r = 3 + 2sin (7t -a)
+From = 0
+To = 2pi
+Steps = 1000
+Color = clBlue
+
+[Func2]
+FuncType = 2
+r = 5 + 4sin ( 9 ( t + 2a ) )
+From = 0
+To = 2pi
+Steps = 1000
+Color = clLime
+
+[Data]
+TextLabelCount = 0
+FuncCount = 2
+PointSeriesCount = 0
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+
+[CustomFunctions]
+a = 0
+
+[Animate]
+Constant = a
+FramesPerSecond = 10
+%a = 0;4pi;0.03
+

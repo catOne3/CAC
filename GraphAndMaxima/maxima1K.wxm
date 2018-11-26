@@ -1,0 +1,48 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 13.04.2 ] */
+
+/* [wxMaxima: input   start ] */
+a:x*sin(1/log(x));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+wxplot2d(a, [x,0,.95]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+
+wxplot2d(a, [x,0,.95]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+find_root(a,x,.1,.8);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+find_root(a,x,.8,.9);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+find_root(a,x,.8,.88);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+find_root(a,x,.88,.9);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+find_root(a,x,.9,.93);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+
+find_root(a,x,.93,.94);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+
+find_root(a,x,.94,.95);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

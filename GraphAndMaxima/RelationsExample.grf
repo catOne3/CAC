@@ -1,0 +1,76 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.2.543
+MinVersion = 2.5
+OS = Windows NT 6.2 
+
+[Axes]
+xMin = -18.8844188683581
+xMax = 22.9306127573957
+xTickUnit = 2
+xGridUnit = 2
+yMin = -10.8588428271376
+yMax = 12.2235626336999
+yTickUnit = 2
+yGridUnit = 2
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+
+[Relation1]
+Relation = max(abs ( 4(x-10) ), abs( 10(y-5))) < 20
+Style = 5
+Color = clLime
+Visible = 0
+
+[Relation2]
+Relation = max(x, abs(y)) < 5
+Style = 5
+Color = clBlue
+Visible = 0
+
+[Relation3]
+Relation = max(abs(x), abs(y)) < 5
+Style = 5
+Color = clFuchsia
+Visible = 0
+
+[Relation4]
+Relation = max( abs(4x), abs(10y)) < 20
+Style = 5
+Color = clYellow
+Visible = 0
+
+[Relation5]
+Relation = abs(x) + abs(y) < 4
+Style = 5
+Color = clAqua
+
+[Relation6]
+Relation = abs(x) + abs(y+3) < 4
+Style = 5
+Color = clSilver
+
+[Data]
+TextLabelCount = 0
+FuncCount = 0
+PointSeriesCount = 0
+ShadeCount = 0
+RelationCount = 6
+OleObjectCount = 0
+
+[CustomFunctions]
+to = pi/3
+ro = 5
+b = 2
+
+[Animate]
+Constant = to
+FramesPerSecond = 10
+%a = 1;10;1
+%b = 0.2;20;2.2
+%ro = 0.5;50;5.5
+%to = 0.10471975511966;10.471975511966;1.15191730631626
+

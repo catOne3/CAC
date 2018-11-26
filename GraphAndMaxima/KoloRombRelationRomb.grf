@@ -1,0 +1,63 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.2.543
+MinVersion = 2.5
+OS = Windows NT 6.2 
+
+[Axes]
+xMin = -13.0019614997945
+xMax = 17.48119655538
+xTickUnit = 1
+xGridUnit = 1
+yMin = -7.40965834675507
+yMax = 9.41741523419548
+yTickUnit = 1
+yGridUnit = 1
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+
+[Func1]
+FuncType = 2
+r = ro * cos ( to - t ) + sqrt(b^2 - (ro^2) * (sin (to - t) ) ^2) 
+From = 0
+To = 2pi
+Steps = 1000
+Color = clRed
+
+[Func2]
+FuncType = 2
+r = 4 / ( abs ( sin t ) + abs(cos t ) )
+From = 0
+To = 2pi
+Steps = 1000
+Color = clBlue
+
+[Relation1]
+Relation = abs(x) + abs(y) < 4
+Style = 5
+Color = clBlue
+
+[Data]
+TextLabelCount = 0
+FuncCount = 2
+PointSeriesCount = 0
+ShadeCount = 0
+RelationCount = 1
+OleObjectCount = 0
+
+[CustomFunctions]
+to = pi/3
+ro = 5
+b = 2
+
+[Animate]
+Constant = to
+FramesPerSecond = 10
+%a = 1;10;1
+%b = 0.2;20;2.2
+%ro = 0.5;50;5.5
+%to = 0.10471975511966;10.471975511966;1.15191730631626
+

@@ -1,0 +1,79 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 13.04.2 ] */
+
+/* [wxMaxima: input   start ] */
+1+2;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+is((x-1)*(x+1)=x^2-1);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+is(equal((x-1)*(x+1),x^2-1));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+factor(x^2-1);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+expand((x-1)*(x+1));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+factor(x^2+1);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+a:(x-1)*y;
+b:diff(a,x);
+c:diff(a,y);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+solve(x^2-4, x);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+solve(d*x-3=0, d);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+solve(sin(x)=0.5, x);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+x^3-2*x+5=0;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+solve(x^3-2*x+5=0);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+find_root(x^3-2*x+5, -3, -1);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+wxplot2d(x^3-2*x+5,[x,-3,-1]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+plot2d(x^3-2*x+5,[x,-3,3]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+wxplot2d(x^3-2*x+5, [x,-3,3],[y,-3,3]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+wxplot2d([[parametric, sin(2*t), 2*sin(t)], [parametric, 2*sin(t), sin(2*t)]] ,[t,0,2*%pi],[nticks,1000]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+plot3d(x^2-y^2, [x,-2,2], [y,-2,2], [z,-4,4]);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

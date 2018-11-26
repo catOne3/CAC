@@ -1,0 +1,29 @@
+Trojkat do góry nogami i kolko biegnace po nim:
+tr(a)*cos(a+t)+sqrt(.25 - tr(a)^2*sin(a + t)^2)
+
+Trojkat krecacy sie maly
+1 / 2( sin ( 5pi/6-mod( t+a+pi/6, 2pi/3 ) ) )
+
+Trojkat krecacy sie duzy
+1 / sin ( 5pi/6-mod( t-2a+pi/6, 2pi/3 ) )
+
+
+
+Trojkat maly
+1 /2 ( sin ( 5pi/6-mod( t+pi/6, 2pi/3 ) ) )
+
+Trojkat duzy
+1/sin(5pi/6-mod(t+pi/6,2pi/3))
+
+Kolo po malym trojkacie przeciwnie do wskazowek
+tr(2a)*cos(2a-t)+sqrt(.25 - (tr(2a))^2*sin(2a - t)^2)
+
+Kolo po duzym trojkacie zgdnie ze wzkazowkami
+2tr(-2a)*cos(2a+t)+sqrt(.25 - (2 tr(-2a))^2*sin(2a + t)^2)
+
+Kolo po malym trojkacie zgodnie ze wskazowkami
+tr(-2a)*cos(-100a+t)+sqrt(.25 - (tr(-2a))^2*sin(-100a + t)^2)
+
+Kolo po duzym trojkacie przeciwnie do wskazowek
+2tr(2a)*cos(2a-t)+sqrt(.25 - (2 tr(2a))^2*sin(2a - t)^2)
+-tr2(a)*cos(a+t)+sqrt(.25-tr2(a)^2*sin(a+t)^2)
