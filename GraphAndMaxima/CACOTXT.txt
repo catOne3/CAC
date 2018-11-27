@@ -24,3 +24,4 @@ Maxima is a descendant of Macsyma, the legendary computer algebra system develop
 The Maxima branch of Macsyma was maintained by William Schelter from 1982 until he passed away in 2001. In 1998 he obtained permission to release the source code under the GNU General Public License (GPL). It was his efforts and skill which have made the survival of Maxima possible, and we are very grateful to him for volunteering his time and expert knowledge to keep the original DOE Macsyma code alive and well. Since his death, a group of users and developers has formed to bring Maxima to a wider audience.
 
 ------------------------------------------------------------------------------------------------------------------------------
+This
