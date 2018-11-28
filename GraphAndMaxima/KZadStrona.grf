@@ -1,0 +1,104 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.2.543
+MinVersion = 2.5
+OS = Windows NT 6.2 
+
+[Axes]
+xMin = -2.72991202461865
+xMax = 3.54629989718135
+xTickUnit = 0.2
+xGridUnit = 0.2
+yMin = -1.64705952582028
+yMax = 1.83119078748497
+yTickUnit = 0.2
+yGridUnit = 0.2
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+
+[Func1]
+FuncType = 2
+r = tr(t)
+From = 0
+To = 2pi
+Steps = 1000
+Style = 2
+Color = clPurple
+
+[PointSeries1]
+FillColor = clRed
+LineColor = clBlue
+Size = 5
+Style = 0
+LineSize = 3
+LineStyle = 0
+LabelPosition = 1
+PointType = 1
+PointCount = 2
+Points = 0,0;-a,tr(-a);
+Visible = 0
+LegendText = Seria 1
+
+[Func2]
+FuncType = 2
+r = 1.5
+From = 0
+To = 2pi
+Steps = 1000
+Style = 2
+Color = clPurple
+
+[PointSeries2]
+FillColor = clRed
+LineColor = clBlue
+Size = 5
+Style = 0
+LineSize = 3
+LineStyle = 0
+LabelPosition = 1
+PointType = 1
+PointCount = 2
+Points = a,tr(a);-a,1.5;
+Visible = 0
+LegendText = Seria 2
+
+[PointSeries3]
+FillColor = clRed
+LineColor = clBlue
+Size = 5
+Style = 0
+LineSize = 3
+LineStyle = 0
+LabelPosition = 1
+PointType = 1
+PointCount = 2
+Points = -a,tr(-a);-2a,1.5;
+LegendText = Seria 3
+
+[Label1]
+Placement = 0
+Pos = -1.38762194577214;1.75072653207727
+Text = {\\rtf1\\ansi\\ansicpg1250\\deff0\\deflang1045{\\fonttbl{\\f0\\fnil\\fcharset238{\\*\\fname Times New Roman;}Times New Roman CE;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\f0\\fs36 Tick the checkbox connected\\par\nto the appropiate series of points\\par\nand play the animation\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Data]
+TextLabelCount = 1
+FuncCount = 2
+PointSeriesCount = 3
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+
+[CustomFunctions]
+tr(t) = 1/(2sin(5pi/6-mod(t+5pi/6,2pi/3)))
+a = 0
+
+[Animate]
+Constant = a
+FramesPerSecond = 10
+%a = 0;4pi;0.03
+
