@@ -25,6 +25,6 @@ The Maxima branch of Macsyma was maintained by William Schelter from 1982 until 
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-W pliku TXTclockTXT macie wxMaxima z zegarkiem odliczającym 15sekund
+W pliku TXTclockTXT macie wxMaxima z zegarkiem odliczającym 30sekund
 jedna wskazówka odnosi się do sekund a druga do 1/10 sekund tak jak było w poleceniu
-Jeżeli chcecie pół minuty to w Animate zmieńcie TO na 10pi a jak chcecie minutę to 20pi - trochę się to wykonuje.
+Jeżeli chcecie pół minuty to w Animate zmieńcie TO na 10pi a jak chcecie minutę to 20pi - trochę się to wykonuje, 15sek to 5pi.
