@@ -1,0 +1,26 @@
+Maxima is written in Lisp, and it is easy to access Lisp functions and variables from Maxima and vice versa. Lisp and Maxima symbols are distinguished by a naming convention. A Lisp symbol which begins with a dollar sign $ corresponds to a Maxima symbol without the dollar sign.
+
+A Maxima symbol which begins with a question mark ? corresponds to a Lisp symbol without the question mark. For example, the Maxima symbol foo corresponds to the Lisp symbol $FOO, while the Maxima symbol ?foo corresponds to the Lisp symbol FOO. Note that ?foo is written without a space between ? and foo; otherwise it might be mistaken for describe ("foo").
+
+Hyphen -, asterisk *, or other special characters in Lisp symbols must be escaped by backslash \ where they appear in Maxima code. For example, the Lisp identifier *foo-bar* is written ?\*foo\-bar\* in Maxima.
+
+Lisp code may be executed from within a Maxima session. A single line of Lisp (containing one or more forms) may be executed by the special command :lisp. For example, calls the Lisp function foo with Maxima variables x and y as arguments. The :lisp construct can appear at the interactive prompt or in a file processed by batch or demo, but not in a file processed by load, batchload, translate_file, or compile_file.
+
+The function to_lisp opens an interactive Lisp session. Entering (to-maxima) closes the Lisp session and returns to Maxima.
+
+Lisp functions and variables which are to be visible in Maxima as functions and variables with ordinary names (no special punctuation) must have Lisp names beginning with the dollar sign $.
+
+Maxima is case-sensitive, distinguishing between lowercase and uppercase letters in identifiers. There are some rules governing the translation of names between Lisp and Maxima.
+
+    A Lisp identifier not enclosed in vertical bars corresponds to a Maxima identifier in lowercase. Whether the Lisp identifier is uppercase, lowercase, or mixed case, is ignored. E.g., Lisp $foo, $FOO, and $Foo all correspond to Maxima foo. But this is because $foo, $FOO and $Foo are converted by the Lisp reader by default to the Lisp symbol $FOO.
+    A Lisp identifier which is all uppercase or all lowercase and enclosed in vertical bars corresponds to a Maxima identifier with case reversed. That is, uppercase is changed to lowercase and lowercase to uppercase. E.g., Lisp |$FOO| and |$foo| correspond to Maxima foo and FOO, respectively.
+    A Lisp identifier which is mixed uppercase and lowercase and enclosed in vertical bars corresponds to a Maxima identifier with the same case. E.g., Lisp |$Foo| corresponds to Maxima Foo. 
+Maxima is a system for the manipulation of symbolic and numerical expressions, including differentiation, integration, Taylor series, Laplace transforms, ordinary differential equations, systems of linear equations, polynomials, sets, lists, vectors, matrices and tensors. Maxima yields high precision numerical results by using exact fractions, arbitrary-precision integers and variable-precision floating-point numbers. Maxima can plot functions and data in two and three dimensions.
+
+The Maxima source code can be compiled on many systems, including Windows, Linux, and MacOS X. The source code for all systems and precompiled binaries for Windows and Linux are available at the SourceForge file manager.
+
+Maxima is a descendant of Macsyma, the legendary computer algebra system developed in the late 1960s at the Massachusetts Institute of Technology. It is the only system based on that effort still publicly available and with an active user community, thanks to its open source nature. Macsyma was revolutionary in its day, and many later systems, such as Maple and Mathematica, were inspired by it.
+
+The Maxima branch of Macsyma was maintained by William Schelter from 1982 until he passed away in 2001. In 1998 he obtained permission to release the source code under the GNU General Public License (GPL). It was his efforts and skill which have made the survival of Maxima possible, and we are very grateful to him for volunteering his time and expert knowledge to keep the original DOE Macsyma code alive and well. Since his death, a group of users and developers has formed to bring Maxima to a wider audience.
+
+------------------------------------------------------------------------------------------------------------------------------
